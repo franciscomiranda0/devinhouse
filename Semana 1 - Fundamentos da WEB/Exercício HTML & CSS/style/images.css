@@ -1,0 +1,23 @@
+article {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section>img {
+    float: left;
+    margin-right: 10px;
+}
+
+section>h2 {
+    clear: both;
+    text-align: center;
+}
+
+section>p {
+    margin-right: 10px;
+    text-align: justify;
+    text-justify: auto;
+}

@@ -1,0 +1,41 @@
+article {
+    text-align: center;
+    display: flex-wrap;
+    flex: 1 1 auto;
+}
+
+.start-ident {
+    text-align: start;
+}
+
+.iframe-container {
+    padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+iframe {
+    bottom: 0;
+    height: 80%;
+    left: 10%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+}
+
+footer {
+    align-items: flex-end;
+    background-color: brown;
+    display: -webkit-flex;
+    display: flexbox;
+    flex-direction: row;
+    height: 200px;
+}
+
+footer>p {
+    color: white;
+    flex: 1 1 auto;
+    text-align: center;
+}

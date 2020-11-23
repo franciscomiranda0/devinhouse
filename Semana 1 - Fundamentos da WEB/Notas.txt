@@ -1,0 +1,23 @@
+Aula 03 - 19/Nov {
+    
+    CSS {
+
+        Regras de estilização:
+
+        Cascata -> O que vem depois ganha, caso sejam as mesmas tags;
+        Epecificidade -> O que é mais específico ganha, e.g. uma classe ganha da tag;
+        Herança -> Elementos internos herdam do pai;
+    }
+}
+
+Aula 04 - 19/Nov {
+    
+}
+
+Aula 04 - 20/Nov {
+
+}
+
+Aula 05 - 20/Nov {
+    
+}
