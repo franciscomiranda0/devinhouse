@@ -21,3 +21,16 @@ section>p {
     text-align: justify;
     text-justify: auto;
 }
+
+@media screen and (max-width: 639px) {
+    #picture-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+    .responsive-media {
+        height: 80%;
+        left: 10%;
+        width: 80%;
+    }
+}
