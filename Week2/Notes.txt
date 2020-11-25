@@ -1,0 +1,38 @@
+Bibliografia relevante {
+
+    Livros Online {
+
+        Speaking JavaScript {
+            http://speakingjs.com/es5/index.html
+        }
+
+        Exploring JavaScript {
+            https://exploringjs.com/
+        }
+    }
+
+    Livros Impressos {
+        
+        Estrutura de Dados e Algoritmos em JavaScript {
+            https://www.amazon.com.br/Estruturas-Dados-Algoritmos-Com-Javascript/dp/8575226932
+        }
+    }
+}
+
+Aula 01 - 23/Nov {
+    
+    Exercícios {
+        Disponíveis no Trello.
+    }
+}
+
+Aula 02 - 24/Nov {
+
+    toFixed {
+        Confere arrendondamento ao número.
+
+        260.88.toFixed() -> 261
+        260.88.toFixed(1) -> 260.9
+        260.88.toFixed(2) -> 260.88
+    }
+}

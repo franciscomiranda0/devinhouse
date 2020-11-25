@@ -1,0 +1,55 @@
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.btn-base {
+    background-color: var(--clr-secondary-light);
+    border: .5px solid var(--clr-secondary-dark);
+    border-radius: 6px;
+    box-shadow: .5px .5px 3px var(--clr-gray-4);
+    font-weight: 600;
+    min-width: 180px;
+    padding: 5px;
+    width: fit-content;
+}
+
+.full-width {
+    width: 100%;
+    flex-basis: 100%;
+}
+
+.btn-half-width {
+    min-width: 90px;
+}
+
+.dialog-base {
+    background-color: var(--clr-primary-light);
+    border: 2px solid var(--clr-primary-dark);
+    border-radius: 8px;
+    box-shadow: 1.5px 1.5px 4px var(--clr-gray-4);
+}
+
+:root {
+    /* *COLOR SCHEME */
+    /* PRIMARY */
+    --clr-primary-light: #F39B9B;
+    --clr-primary-main: #F08080;
+    --clr-primary-dark: #E83939;
+    /* SECONDARY */
+    --clr-secondary-light: #F3D69B;
+    --clr-secondary-main: #F0CA7F;
+    --clr-secondary-dark: #E8AD39;
+    /* EVENT */
+    --clr-successful: #90EE90;
+    --clr-unsuccessful: #ED1C24;
+    /* GRAY */
+    --clr-gray-0: #EDEDED;
+    --clr-gray-1: #DBDBDB;
+    --clr-gray-2: #ADADAD;
+    --clr-gray-3: #808080;
+    --clr-gray-4: #525252;
+    --clr-gray-5: #242424;
+    /* COMMON */
+}

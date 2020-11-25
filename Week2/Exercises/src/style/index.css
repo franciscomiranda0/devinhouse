@@ -1,0 +1,76 @@
+body {
+    background-color: var(--clr-gray-0);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+    min-width: 300px;
+    padding: 0px;
+    width: auto !important;
+}
+
+header {
+    color: var(--clr-secondary-main);
+    background-color: var(--clr-primary-main);
+    font-family: fantasy;
+    letter-spacing: 2pt;
+    text-shadow: 2px 2px 2px black;
+    width: 100%;
+}
+
+header>div {
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+hr {
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 5px;
+}
+
+main>article {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+dialog {
+    padding: 0px;
+}
+
+dialog>header {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+header>h3 {
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+dialog>form {
+    padding: 0px 16px 16px 16px;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+dialog>form>div>label {
+    flex-basis: 50%;
+}

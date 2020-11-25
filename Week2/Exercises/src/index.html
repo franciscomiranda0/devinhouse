@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    <link rel="shortcut icon" href="ico/favicon_index_32x32.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/styles.css">
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+
+<!-- <body onpageshow="alertUser()"> -->
+
+<body>
+    <header>
+        <div class="flex-row">
+            <h1>Semana 2</h1>
+            <span id='username'></span>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <article>
+            <button class="btn-base" onclick="confirmPageChange()">
+                Carregar Segunda Página
+            </button>
+            <button class="btn-base" onclick="getUserName()">
+                Nome
+            </button>
+            <button class="btn-base" onclick="getTriviaAnswer()">
+                Trivia
+            </button>
+            <button class="btn-base" onclick="openFirstAndLastNameDialog()">
+                Nome e Sobrenome
+            </button>
+
+            <dialog class="dialog-base" id="firstAndLastNameDialog">
+                <header>
+                    <h3>Formulário</h3>
+                </header>
+                <form id="firstAndLastNameForm" onsubmit="submitFirstAndLastNameDialogForm(event)">
+                    <div class="form-div">
+                        <label for="">Nome</label>
+                        <input type="text" name="">
+                    </div>
+                    <div class="form-div">
+                        <label for="">Sobrenome</label>
+                        <input type="text" name="">
+                    </div>
+                    <div class="form-div">
+                        <input type="checkbox" name="formOption">
+                        <label class="full-width" for="formOption">UpperCase & Tamanho</label>
+                    </div>
+                    <div class="form-div">
+                        <button class="btn-base btn-half-width" onclick="disposeDialog()">Fechar</button>
+                        <button class="btn-base full-width" type="submit" form="firstAndLastNameForm">
+                            Enviar
+                        </button>
+                    </div>
+                    <div class="form-div">
+                        <span id="fistAndLastNameResult">Seu nome</span>
+                    </div>
+                </form>
+            </dialog>
+
+        </article>
+    </main>
+</body>
+
+</html>

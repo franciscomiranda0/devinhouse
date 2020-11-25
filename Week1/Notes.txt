@@ -1,3 +1,10 @@
+Bibliografia relevante {
+
+    Emmet Cheat Sheet {
+        https://docs.emmet.io/cheat-sheet/
+    }
+}
+
 Aula 03 - 19/Nov {
     
     CSS {
