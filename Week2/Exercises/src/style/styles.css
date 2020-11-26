@@ -25,9 +25,9 @@
 }
 
 .dialog-base {
-    background-color: var(--clr-primary-light);
+    background-color: var(--clr-gray-0);
     border: 2px solid var(--clr-primary-dark);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 1.5px 1.5px 4px var(--clr-gray-4);
 }
 

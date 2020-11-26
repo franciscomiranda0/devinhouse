@@ -21,7 +21,6 @@ const getTriviaAnswer = () => {
 
 const openFirstAndLastNameDialog = () => {
     document.getElementById("firstAndLastNameDialog").open = true
-
 }
 
 const submitFirstAndLastNameDialogForm = (event) => {
@@ -32,12 +31,16 @@ const submitFirstAndLastNameDialogForm = (event) => {
     let firstAndLastNameSize
 
     if (event.target.elements[2].checked) {
-        firstName = firstName.toUpperCase()
         lastName = lastName.toUpperCase()
         firstAndLastNameSize = firstName.length + lastName.length
     }
 
-    document.getElementById("fistAndLastNameResult").innerText = `${firstName} ${lastName}${firstAndLastNameSize>0? `, ${firstAndLastNameSize} letras.` : '' }`
+    document
+        .getElementById("fistAndLastNameResult")
+        .innerText =
+        `${firstName} ${lastName}${firstAndLastNameSize> 0 ? 
+            `, ${firstAndLastNameSize} letras.` :
+            '' }`
 }
 
 const disposeDialog = () => {
