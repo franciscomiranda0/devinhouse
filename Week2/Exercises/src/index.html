@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="ico/favicon_index_32x32.ico" type="image/x-icon">
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/styles.css">
-    <script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <!-- <body onpageshow="alertUser()"> -->
@@ -36,6 +35,13 @@
             <button class="btn-base" onclick="openFirstAndLastNameDialog()">
                 Nome e Sobrenome
             </button>
+            <button class="btn-base" id="simpleAgeButton" onclick="openSimpleAgeDialog()">
+                Idade Simples
+            </button>
+            <button class="btn-base" onclick="isEven()">
+                Par ou Ímpar
+            </button>
+            <span id="isEvenView"></span>
 
             <dialog class="dialog-base" id="firstAndLastNameDialog">
                 <header>
@@ -55,7 +61,9 @@
                         <label class="full-width" for="formOption">Sobrenome Caixa Alta & Tamanho</label>
                     </div>
                     <div class="form-div">
-                        <button class="btn-base btn-half-width" onclick="disposeDialog()">Fechar</button>
+                        <button class="btn-base btn-half-width" onclick="disposeDialog">
+                            Fechar
+                        </button>
                         <button class="btn-base full-width" type="submit" form="firstAndLastNameForm">
                             Enviar
                         </button>
@@ -66,8 +74,34 @@
                 </form>
             </dialog>
 
+            <dialog class="dialog-base" id="simpleAgeDialog">
+                <header>
+                    <h3>Idade Simples</h3>
+                </header>
+                <form action="">
+                    <div class="form-div">
+                        <button class="btn-base" onclick="getYear('BIRTH_YEAR')">
+                            Nascimento
+                        </button>
+                    </div>
+                    <div class="form-div">
+                        <button class="btn-base" onclick="getYear('CURRENT_YEAR')">
+                            Ano Atual
+                        </button>
+                    </div>
+                    <div class="form-div" #simpleAgeResultDiv>
+                        <span id="simpleAgeResult">Idade aproximada</span>
+                    </div>
+                    <button class="btn-base" onclick="disposeDialog()">
+                        Fechar
+                    </button>
+                </form>
+
+            </dialog>
+
         </article>
     </main>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 
 </html>

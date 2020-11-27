@@ -71,6 +71,11 @@ dialog>form {
     margin-bottom: 5px;
 }
 
+.divForm {
+    display: flex;
+    padding: 5px;
+}
+
 dialog>form>div>label {
     flex-basis: 50%;
 }

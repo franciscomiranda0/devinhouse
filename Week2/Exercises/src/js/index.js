@@ -1,3 +1,13 @@
+let userBirthYear
+let currentYear
+
+const simpleAgeDialog = document.getElementById('simpleAgeDialog')
+
+simpleAgeDialog
+    .addEventListener('click', event => {
+        event.preventDefault()
+    });
+
 const alertUser = () => {
     window.alert('Bem-vindo à Semana 2')
 }
@@ -8,10 +18,9 @@ const confirmPageChange = () => {
     if (hasConfirmed) window.location.href = 'secondPage.html'
 }
 
-const getUserName = () => {
-    const userName = window.prompt('Insira seu primeiro nome:')
-
-    document.getElementById('username').innerText = userName
+const disposeDialog = () => {
+    document.getElementById('firstAndLastNameDialog').close()
+    simpleAgeDialog.close()
 }
 
 const getTriviaAnswer = () => {
@@ -19,8 +28,43 @@ const getTriviaAnswer = () => {
     console.log(userAnswer);
 }
 
+const getUserName = () => {
+    const userName = window.prompt('Insira seu primeiro nome:')
+
+    document.getElementById('username').innerText = userName
+}
+
+const getYear = (dateOfChoice) => {
+    dateOfChoice === 'BIRTH_YEAR' ?
+        userBirthYear = window.prompt('Ano de nascimento:') :
+        currentYear = window.prompt('Ano atual:')
+
+    updateSimpleAgeView()
+}
+
+const isEven = () => {
+    const number = window.prompt('Número: ')
+
+    number % 2 === 0 && number > 0 ?
+        document.getElementById('isEvenView').innerText = 'É PAR' :
+        number > 0 ?
+        document.getElementById('isEvenView').innerText = 'É ÍMPAR' :
+        document.getElementById('isEvenView').innerText = ''
+
+    setTimeout(isEvenTimeout, 1500)
+    clearTimeout(isEvenTimeout)
+}
+
+function isEvenTimeout() {
+    document.getElementById('isEvenView').innerText = ''
+}
+
 const openFirstAndLastNameDialog = () => {
-    document.getElementById("firstAndLastNameDialog").open = true
+    document.getElementById('firstAndLastNameDialog').open = true
+}
+
+const openSimpleAgeDialog = () => {
+    simpleAgeDialog.open = true
 }
 
 const submitFirstAndLastNameDialogForm = (event) => {
@@ -36,13 +80,19 @@ const submitFirstAndLastNameDialogForm = (event) => {
     }
 
     document
-        .getElementById("fistAndLastNameResult")
+        .getElementById('fistAndLastNameResult')
         .innerText =
         `${firstName} ${lastName}${firstAndLastNameSize> 0 ? 
             `, ${firstAndLastNameSize} letras.` :
             '' }`
 }
 
-const disposeDialog = () => {
-    document.getElementById("firstAndLastNameDialog").close()
+const updateSimpleAgeView = () => {
+    userBirthYear && currentYear ?
+        document
+        .getElementById('simpleAgeResult')
+        .innerText = `Aprox. ${currentYear - userBirthYear} anos.` :
+        document
+        .getElementById('simpleAgeResult')
+        .innerText = 'Idade aproximada'
 }
