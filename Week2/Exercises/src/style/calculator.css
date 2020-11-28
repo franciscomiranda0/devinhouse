@@ -14,21 +14,31 @@
     gap: 4px;
     justify-content: space-between;
     padding: 5px;
+    width: inherit;
 }
 
 .calculator__screen {
     font-size: 20pt;
     padding-right: 20px;
     text-align: end;
+    max-width: 70%;
+    width: inherit;
 }
 
 .calculator__button {
     background-color: var(--clr-primary-light);
     border: 1px solid var(--clr-primary-main);
     color: var(--clr-secondary-light);
-    flex: 1;
+    flex: 20%;
     font-weight: bolder;
     min-width: 60px;
+}
+
+@media screen and (max-width: 410px) {
+    .calculator__button {
+        min-width: 30px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -36,7 +46,7 @@
         min-height: 50px;
     }
     .calculator__screen {
-        width: 90%;
+        width: 100%;
     }
     .calculator__button {
         font-size: 16pt;

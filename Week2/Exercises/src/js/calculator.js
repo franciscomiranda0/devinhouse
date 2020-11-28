@@ -15,13 +15,7 @@ function listener(event) {
         writeString(buttonValue)
 }
 
-function act(buttonValue) {
-    buttonValue == 'ENTER' ?
-        onEnterPressed() :
-        buttonValue == 'BACK' ?
-        onBackspacePressed() :
-        whipeVariables()
-}
+const act = (buttonValue) => buttonValue == 'ENTER' ? onEnterPressed() : buttonValue == 'BACK' ? onBackspacePressed() : whipeVariables()
 
 function getResolution() {
     try {
@@ -37,17 +31,11 @@ function getResolution() {
     }
 }
 
-function isButtonValueAnAction(buttonValue) {
-    return buttonValue == 'BACK' || buttonValue == 'ENTER' || buttonValue == 'CE'
-}
+const isButtonValueAnAction = (buttonValue) => buttonValue == 'BACK' || buttonValue == 'ENTER' || buttonValue == 'CE'
 
-function isButtonValueANumber(buttonValue) {
-    return buttonValue >= 0 && buttonValue <= 9
-}
+const isButtonValueANumber = (buttonValue) => buttonValue >= 0 && buttonValue <= 9
 
-function isButtonValueAnOperator(buttonValue) {
-    return buttonValue == '-' || buttonValue == '+' || buttonValue == '%' || buttonValue == '/' || buttonValue == '*'
-}
+const isButtonValueAnOperator = (buttonValue) => buttonValue == '-' || buttonValue == '+' || buttonValue == '%' || buttonValue == '/' || buttonValue == '*'
 
 function onBackspacePressed() {
     stringToCalculate = stringToCalculate.slice(0, --stringToCalculate.length)
@@ -61,15 +49,9 @@ function onEnterPressed() {
     stringToCalculate = ''
 }
 
-function writeDisplay(displayValue = resolution) {
-    document.getElementById('display').value = displayValue
-}
+const writeDisplay = (displayValue = resolution) => document.getElementById('display').value = displayValue
 
-function writeMemory(buttonValue) {
-    isButtonValueAnOperator(buttonValue) ?
-        stringMemory = buttonValue :
-        stringMemory += buttonValue
-}
+const writeMemory = (buttonValue) => isButtonValueAnOperator(buttonValue) ? stringMemory = buttonValue : stringMemory += buttonValue
 
 function writeString(buttonValue) {
     if (isButtonValueAnOperator(buttonValue) || !isButtonValueAnOperator(buttonValue)) writeMemory(buttonValue)
