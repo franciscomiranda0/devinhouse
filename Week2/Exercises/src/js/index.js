@@ -59,6 +59,14 @@ function isEvenTimeout() {
     document.getElementById('isEvenView').innerText = ''
 }
 
+const loadCalculatorPage = () => {
+    location.href = 'calculator.html'
+}
+
+const loadWatchPage = () => {
+    location.href = 'watch.html'
+}
+
 const openFirstAndLastNameDialog = () => {
     document.getElementById('firstAndLastNameDialog').open = true
 }

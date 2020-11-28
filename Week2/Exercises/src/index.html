@@ -23,24 +23,48 @@
 
     <main>
         <article>
-            <button class="btn-base" onclick="confirmPageChange()">
-                Carregar Segunda Página
-            </button>
-            <button class="btn-base" onclick="getUserName()">
-                Nome
-            </button>
-            <button class="btn-base" onclick="getTriviaAnswer()">
-                Trivia
-            </button>
-            <button class="btn-base" onclick="openFirstAndLastNameDialog()">
-                Nome e Sobrenome
-            </button>
-            <button class="btn-base" id="simpleAgeButton" onclick="openSimpleAgeDialog()">
-                Idade Simples
-            </button>
-            <button class="btn-base" onclick="isEven()">
-                Par ou Ímpar
-            </button>
+            <div class="card-box">
+                <div class="card">
+                    <button class="btn-base" onclick="confirmPageChange()">
+                        Carregar Segunda Página
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="getUserName()">
+                        Nome
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="getTriviaAnswer()">
+                        Trivia
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="openFirstAndLastNameDialog()">
+                        Nome e Sobrenome
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" id="simpleAgeButton" onclick="openSimpleAgeDialog()">
+                        Idade Simples
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="isEven()">
+                        Par ou Ímpar
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="loadWatchPage()">
+                        Carregar Página Relógio
+                    </button>
+                </div>
+                <div class="card">
+                    <button class="btn-base" onclick="loadCalculatorPage()">
+                        Carregar Calculadora
+                    </button>
+                </div>
+            </div>
             <span id="isEvenView"></span>
 
             <dialog class="dialog-base" id="firstAndLastNameDialog">
@@ -96,7 +120,6 @@
                         Fechar
                     </button>
                 </form>
-
             </dialog>
 
         </article>

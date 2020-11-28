@@ -12,7 +12,7 @@ header {
     background-color: var(--clr-primary-main);
     font-family: fantasy;
     letter-spacing: 2pt;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px var(--clr-primary-light);
     width: 100%;
 }
 
@@ -38,11 +38,34 @@ main {
     padding: 5px;
 }
 
-main>article {
+/* main>article {
     align-items: center;
     display: flex;
-    flex-direction: column;
     gap: 10px;
+} */
+
+.card-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+/* * Assumir diferentes tamanhos com @media mobile/desktop */
+
+.card {
+    align-items: flex-end;
+    background-color: var(--clr-primary-light);
+    box-shadow: 0px 1px 5px var(--clr-gray-4);
+    display: flex;
+    height: 120px;
+}
+
+.card>button {
+    color: var(--clr-primary-main);
+    height: fit-content;
+    min-height: 30px;
 }
 
 dialog {

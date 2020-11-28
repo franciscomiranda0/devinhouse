@@ -7,8 +7,8 @@
 .btn-base {
     background-color: var(--clr-secondary-light);
     border: .5px solid var(--clr-secondary-dark);
-    border-radius: 6px;
-    box-shadow: .5px .5px 3px var(--clr-gray-4);
+    /* border-radius: 6px; */
+    /* box-shadow: 0px 1px 5px var(--clr-gray-4); */
     font-weight: 600;
     min-width: 180px;
     padding: 5px;
@@ -31,16 +31,26 @@
     box-shadow: 1.5px 1.5px 4px var(--clr-gray-4);
 }
 
+@media screen and (min-width: 800px) {
+    .card {
+        height: 180px;
+    }
+}
+
 :root {
     /* *COLOR SCHEME */
-    /* PRIMARY */
-    --clr-primary-light: #F39B9B;
-    --clr-primary-main: #F08080;
-    --clr-primary-dark: #E83939;
-    /* SECONDARY */
-    --clr-secondary-light: #F3D69B;
-    --clr-secondary-main: #F0CA7F;
-    --clr-secondary-dark: #E8AD39;
+    /* PRIMARY - SPACE CADET */
+    --clr-primary-light: #51547B;
+    --clr-primary-main: #2b2d42;
+    --clr-primary-dark: #101119;
+    /* SECONDARY - ALICE BLUE */
+    --clr-secondary-light: #EDF2F4;
+    --clr-secondary-main: #C0D1D8;
+    --clr-secondary-dark: #8DADB9;
+    /* TERTIARY - MANATEE */
+    /* --clr-secondary-light: #C3CAD5;
+    --clr-secondary-main: #8d99ae;
+    --clr-secondary-dark: #66758F; */
     /* EVENT */
     --clr-successful: #90EE90;
     --clr-unsuccessful: #ED1C24;
