@@ -63,6 +63,10 @@ const loadCalculatorPage = () => {
     location.href = 'calculator.html'
 }
 
+const loadSeasonsPage = () => {
+    location.href = 'seasons.html'
+}
+
 const loadWatchPage = () => {
     location.href = 'watch.html'
 }
