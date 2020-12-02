@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA & PG</title>
+    <script type="text/javascript" src="js/paPg.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <article>
+            <section>
+                <form #paForm class="form" onsubmit="calculate(event, 'PA')">
+                    <label class="form__label" for="paBaseValue">Valor base:</label>
+                    <input class="form__input" id="paBaseValue" type="text">
+                    <label class="form__label" for="paRootValue">Valor Raiz:</label>
+                    <input class="form__input" id="paRootValue" type="text">
+                    <button class="form__button" type="submit">Obter PA</button>
+                </form>
+            </section>
+            <section>
+                <form #pgForm class="form" onsubmit="calculate(event, 'PG')">
+                    <label class="form__label" for="pgBaseValue">Valor base:</label>
+                    <input class="form__input" id="pgBaseValue" type="text">
+                    <label class="form__label" for="pgRootValue">Valor Raiz:</label>
+                    <input class="form__input" id="pgRootValue" type="text">
+                    <button class="form__button" type="submit">Obter PG</button>
+                </form>
+            </section>
+            <section>
+                <label id="result"></label>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
