@@ -12,7 +12,7 @@
     <main>
         <article>
             <section>
-                <form #paForm class="form" onsubmit="calculate(event, 'PA')">
+                <form #paForm class="form" onsubmit="submitForm(event, 'PA')">
                     <label class="form__label" for="paBaseValue">Valor base:</label>
                     <input class="form__input" id="paBaseValue" type="text">
                     <label class="form__label" for="paRootValue">Valor Raiz:</label>
@@ -21,7 +21,7 @@
                 </form>
             </section>
             <section>
-                <form #pgForm class="form" onsubmit="calculate(event, 'PG')">
+                <form #pgForm class="form" onsubmit="submitForm(event, 'PG')">
                     <label class="form__label" for="pgBaseValue">Valor base:</label>
                     <input class="form__input" id="pgBaseValue" type="text">
                     <label class="form__label" for="pgRootValue">Valor Raiz:</label>
