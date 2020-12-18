@@ -25,7 +25,6 @@ const clearDatabase = () => {
 export const create = student => {
     if (!database instanceof Student) return;
     database.push(student);
-    console.log(database);
 }
 
 export const database = [

@@ -1,4 +1,3 @@
-import { title } from 'process';
 import React from 'react';
 
 class Scaffold extends React.Component {

@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { initDatabase } from './data/Database'
+import { buildServer } from './services/server';
+import StudentService from './services/StudentService';
+
+initDatabase();
+if (process.env.NODE_ENV !== 'production') {
+  buildServer({ environment: process.env.NODE_ENV })
+};
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
