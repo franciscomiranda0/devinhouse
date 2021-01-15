@@ -5,6 +5,7 @@ export const initDatabase = () => {
     create(new Student(
         'Aderino',
         '01/01/1990',
+        '3rd',
         'AderinoPai',
         '4833445566',
         'Pais',
@@ -13,7 +14,34 @@ export const initDatabase = () => {
         '',
         true,
         ['Pais', 'Avós'],
+        ''
+    ));
+    create(new Student(
+        'Baderino',
+        '01/01/1990',
         '3rd',
+        'AderinoPai',
+        '4833445566',
+        'Pais',
+        '48988776655',
+        false,
+        '',
+        true,
+        ['Pais', 'Avós'],
+        ''
+    ));
+    create(new Student(
+        'Caderino',
+        '01/01/1990',
+        '3rd',
+        'AderinoPai',
+        '4833445566',
+        'Pais',
+        '48988776655',
+        false,
+        '',
+        true,
+        ['Pais', 'Avós'],
         ''
     ));
 }

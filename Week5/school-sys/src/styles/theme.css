@@ -1,0 +1,20 @@
+:root {
+    --clr-primary: #FAFAFA;
+    --clr-secondary: #BDE0FE;
+    --clr-tertiary: #A2D2FF;
+    --clr-quaternary: #533B4D;
+    --clr-quinary: #D4C1EC;
+    --clr-gray1: #FAFAFA;
+    --clr-gray2: #f1f1f1;
+    --clr-gray3: #dddddd;
+    --clr-gray4: #c0c0c0;
+    --clr-gray5: #a1a1a1;
+    /* Spacing */
+    --spc-xxs: 15px;
+    --spc-xs: 25px;
+    --spc-sm: 50px;
+    --spc-md: 100px;
+    --spc-lg: 200px;
+    --spc-xl: 350px;
+    --spc-xxl: 550px;
+}
