@@ -16,12 +16,24 @@ export function buildServer({ environment = 'development' } = {}) {
         routes() {
             this.namespace = API_URL;
 
-            this.get('/student', ({ db }) => { console.log(db.students); return db.students; });
-            this.delete('/student/:id', (schema, request) =>
-                schema.db.students.remove(request.params.id)
+            this.post('/student', (schema, request) =>
+                schema.db.students
+                    .insert(JSON.parse(request.requestBody))
+            );
+
+            this.get('/student', ({ db }) =>
+                db.students
+            );
+
+            this.put('/student', (schema, request) =>
+                schema.students.create(JSON.parse(request.requestBody))
             )
+
+            this.delete('/student/:id', (schema, request) =>
+                schema.db.students
+                    .remove(request.params.id)
+            );
         }
     })
-    console.log(API_URL, STUDENT_API, environment, server);
     return server;
 }
