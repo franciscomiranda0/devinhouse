@@ -1,0 +1,43 @@
+.entry__root {
+    width: inherit;
+}
+
+.entry__form--wrapper {
+    margin: 15px;
+    width: calc(screen - 15px);
+}
+
+.entry__form {
+    background-color: var(--clr-gray2);
+    display: flex;
+    flex-direction: column;
+}
+
+.entry__form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 5px 20px;
+    overflow: auto;
+}
+
+.entry__form--cell {
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+    width: 31%;
+}
+
+.entry__form--cell--input {
+    border: .2px solid var(--clr-gray4);
+    border-radius: 4px;
+    min-height: 24px;
+}
+
+.input--expand {
+    width: 200%;
+}
+
+.entry__form--footer {
+    margin: 5px 20px
+}

@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+import './index.css';
+import './styles/theme.css'
 
 import { initDatabase } from './data/Database'
 import { buildServer } from './services/server';
-import StudentService from './services/StudentService';
 
 initDatabase();
 if (process.env.NODE_ENV !== 'production') {
