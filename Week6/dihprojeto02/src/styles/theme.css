@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root {
+    --clr-theme-primary: #005b95;
+    --clr-theme-black-87: #1b1811;
+    --clr-theme-black-54: #757575;
+    --clr-theme-black-38: #9E9E9E;
+    /*  */
+    --clr-theme-black-lightest: #dadada;
+    --clr-theme-black-light: #c0c0c0;
+    --clr-theme-black-medium: #868686;
+    --clr-theme-black-dark: #464646;
+    --clr-theme-black-darkest: #242424;
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+.headline {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.button__label {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* * */
+
+.search {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    height: 48px;
+    width: 100%;
+}
+
+.search__input {
+    border: none;
+    padding: 8px;
+    width: 100%;
+}
+
+.search__button {
+    background-color: white;
+    border: none;
+    padding: 8px;
+}
+
+.search__button:hover {
+    cursor: pointer;
+}

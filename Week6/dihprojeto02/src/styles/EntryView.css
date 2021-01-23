@@ -1,0 +1,86 @@
+* {
+    font-family: 'Montserrat';
+}
+
+.entry-dialog {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px;
+    width: 80%;
+}
+
+.entry-dialog__title--wrapper {
+    display: flex;
+    padding: 8px;
+}
+
+.entry-dialog__title {
+    width: 100%;
+}
+
+.entry-dialog__close {
+    background-color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.entry-dialog__button:disabled {
+    background-color: var(--clr-theme-black-light);
+    border-color: var(--clr-theme-black-light);
+    cursor: default;
+}
+
+.entry-dialog__close:hover {
+    cursor: pointer;
+}
+
+.entry-dialog__form--wrapper {
+    padding: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form__row {
+    display: flex;
+    gap: 16px;
+}
+
+.form__cell {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form__cell--label {
+    color: var(--clr-theme-black-medium);
+    font-weight: bold;
+}
+
+.form__cell--input {
+    border: none;
+    border-bottom: 2px solid var(--clr-theme-black-dark);
+    height: 24px;
+    padding: 4px;
+}
+
+.form__cell--button {}
+
+.form__footer {
+    display: flex;
+    padding: 8px;
+    justify-content: flex-end;
+}
+
+.w50 {
+    width: calc(50% - 8px);
+}
+
+.w75 {
+    width: 75%;
+}
